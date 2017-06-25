@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A118B9EC1EFFCBC4000DF3BB /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A118B9EB1EFFCBC4000DF3BB /* OpenCVWrapper.mm */; };
 		A19676641EFFC70400ADA264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19676631EFFC70400ADA264 /* AppDelegate.swift */; };
 		A19676661EFFC70400ADA264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19676651EFFC70400ADA264 /* ViewController.swift */; };
 		A19676691EFFC70400ADA264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19676671EFFC70400ADA264 /* Main.storyboard */; };
 		A196766B1EFFC70400ADA264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A196766A1EFFC70400ADA264 /* Assets.xcassets */; };
 		A196766E1EFFC70400ADA264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A196766C1EFFC70400ADA264 /* LaunchScreen.storyboard */; };
+		CA15E3491DBF3C59432A9F1F /* Pods_Auto_Stitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BE906B777A842B692C2818 /* Pods_Auto_Stitcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6417BEFC13A10BF79CFB7C /* Pods-Auto Stitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto Stitcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auto Stitcher/Pods-Auto Stitcher.release.xcconfig"; sourceTree = "<group>"; };
+		68BE906B777A842B692C2818 /* Pods_Auto_Stitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auto_Stitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A118B9E91EFFCBC4000DF3BB /* Auto Stitcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Auto Stitcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		A118B9EA1EFFCBC4000DF3BB /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		A118B9EB1EFFCBC4000DF3BB /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		A19676601EFFC70400ADA264 /* Auto Stitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Stitcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19676631EFFC70400ADA264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19676651EFFC70400ADA264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		A196766A1EFFC70400ADA264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A196766D1EFFC70400ADA264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A196766F1EFFC70400ADA264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9DB2423E8C33F3CF2D3B4C3 /* Pods-Auto Stitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto Stitcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auto Stitcher/Pods-Auto Stitcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA15E3491DBF3C59432A9F1F /* Pods_Auto_Stitcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3D5C9642AC30FCAEB1EB01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9DB2423E8C33F3CF2D3B4C3 /* Pods-Auto Stitcher.debug.xcconfig */,
+				0F6417BEFC13A10BF79CFB7C /* Pods-Auto Stitcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D5CE02B2ADCEDBA97DD115E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68BE906B777A842B692C2818 /* Pods_Auto_Stitcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A19676571EFFC70300ADA264 = {
 			isa = PBXGroup;
 			children = (
 				A19676621EFFC70400ADA264 /* Auto Stitcher */,
 				A19676611EFFC70400ADA264 /* Products */,
+				6E3D5C9642AC30FCAEB1EB01 /* Pods */,
+				9D5CE02B2ADCEDBA97DD115E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,9 @@
 				A196766A1EFFC70400ADA264 /* Assets.xcassets */,
 				A196766C1EFFC70400ADA264 /* LaunchScreen.storyboard */,
 				A196766F1EFFC70400ADA264 /* Info.plist */,
+				A118B9EA1EFFCBC4000DF3BB /* OpenCVWrapper.h */,
+				A118B9EB1EFFCBC4000DF3BB /* OpenCVWrapper.mm */,
+				A118B9E91EFFCBC4000DF3BB /* Auto Stitcher-Bridging-Header.h */,
 			);
 			path = "Auto Stitcher";
 			sourceTree = "<group>";
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19676721EFFC70400ADA264 /* Build configuration list for PBXNativeTarget "Auto Stitcher" */;
 			buildPhases = (
+				BD508357A4E9FC2014B815B2 /* [CP] Check Pods Manifest.lock */,
 				A196765C1EFFC70400ADA264 /* Sources */,
 				A196765D1EFFC70400ADA264 /* Frameworks */,
 				A196765E1EFFC70400ADA264 /* Resources */,
+				62453B41ED00F398B4E47ECA /* [CP] Embed Pods Frameworks */,
+				4BBE38588E03001D22BFE687 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +131,7 @@
 					A196765F1EFFC70400ADA264 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3D8EC8G4N5;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +167,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BBE38588E03001D22BFE687 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auto Stitcher/Pods-Auto Stitcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62453B41ED00F398B4E47ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Auto Stitcher/Pods-Auto Stitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD508357A4E9FC2014B815B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A196765C1EFFC70400ADA264 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +222,7 @@
 			files = (
 				A19676661EFFC70400ADA264 /* ViewController.swift in Sources */,
 				A19676641EFFC70400ADA264 /* AppDelegate.swift in Sources */,
+				A118B9EC1EFFCBC4000DF3BB /* OpenCVWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,26 +345,33 @@
 		};
 		A19676731EFFC70400ADA264 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DB2423E8C33F3CF2D3B4C3 /* Pods-Auto Stitcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3D8EC8G4N5;
 				INFOPLIST_FILE = "Auto Stitcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.andyfang.Auto-Stitcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Auto Stitcher/Auto Stitcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A19676741EFFC70400ADA264 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6417BEFC13A10BF79CFB7C /* Pods-Auto Stitcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3D8EC8G4N5;
 				INFOPLIST_FILE = "Auto Stitcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.andyfang.Auto-Stitcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Auto Stitcher/Auto Stitcher-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +395,7 @@
 				A19676741EFFC70400ADA264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
